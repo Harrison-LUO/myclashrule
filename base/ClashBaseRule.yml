@@ -168,14 +168,6 @@ tun:
   device: utuncat0
   mtu: 1500
   strict-route: true
-  route-address:
-    - 0.0.0.0/1
-    - 128.0.0.0/1
-    - "::/1"
-    - "8000::/1"
-  route-exclude-address:
-    - 100.64.0.0/10
-    - fd7a:115c:a1e0::/48
   include-package:
     - com.android.chrome
   exclude-package:
