@@ -1,19 +1,11 @@
 # 部分服务
-DOMAIN-KEYWORD,1password
-DOMAIN-SUFFIX,colocrossing.com
-DOMAIN-SUFFIX,cloudcone.com
-DOMAIN-KEYWORD,cosmotown
-DOMAIN-SUFFIX,spaceship.com
-DOMAIN-SUFFIX,spaceship-cdn.com
-DOMAIN-SUFFIX,my.racknerd.com
-DOMAIN-SUFFIX,racknerd.com
+DOMAIN-SUFFIX,frpus.112700.xyz
 DOMAIN-SUFFIX,us1.kuxueyun.com
 DOMAIN-SUFFIX,ca.kuxueyun.com
 DOMAIN-SUFFIX,follow.is
 DOMAIN-SUFFIX,wise.com
 DOMAIN-SUFFIX,vote.gov
 DOMAIN-SUFFIX,reshot.ai
-DOMAIN-KEYWORD,huggingface
 DOMAIN-SUFFIX,huggingface.co
 DOMAIN-SUFFIX,hf.space
 DOMAIN-SUFFIX,t-mobile.com
@@ -25,18 +17,15 @@ DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursor.com
-DOMAIN,www.iknowu.top
-DOMAIN,iknowu.top
-DOMAIN,www.aifun.win
-DOMAIN,aifun.win
-DOMAIN-SUFFIX,chat.iknowu.top
-DOMAIN-SUFFIX,api.iknowu.top
+DOMAIN-SUFFIX,akm.112700.xyz
+DOMAIN-SUFFIX,akmws.112700.xyz
+DOMAIN-SUFFIX,search.iswsh.com
+DOMAIN-SUFFIX,chat.aijust.org
+DOMAIN-SUFFIX,api.aijust.org
 DOMAIN-SUFFIX,chat.aifun.win
 DOMAIN-SUFFIX,api.aifun.win
 DOMAIN-SUFFIX,chat.iswsh.com
 DOMAIN-SUFFIX,image.iswsh.com
-DOMAIN-SUFFIX,search.iswsh.com
-DOMAIN-SUFFIX,souai.iswsh.com
 DOMAIN-SUFFIX,sub.876521.xyz
 DOMAIN-SUFFIX,yf.876521.xyz
 DOMAIN-SUFFIX,ushe0.112700.xyz
@@ -44,9 +33,11 @@ DOMAIN-SUFFIX,usgc0.112700.xyz
 DOMAIN-SUFFIX,usrn0.112700.xyz
 DOMAIN-SUFFIX,usccs0.112700.xyz
 DOMAIN-SUFFIX,usakile0.112700.xyz
-DOMAIN,voice.google.com
+DOMAIN-SUFFIX,usccsny.luoveyq.space
+DOMAIN-KEYWORD,voice.google
+DOMAIN-KEYWORD,voice.telephony
 DOMAIN-SUFFIX,voice.google.com
-DOMAIN,voice.telephony.goog
+DOMAIN-SUFFIX,voice.telephony.goog
 DOMAIN-SUFFIX,zotero.org
 DOMAIN-SUFFIX,us-east-1.amazonaws.com
 DOMAIN-SUFFIX,namesilo.com
@@ -110,6 +101,7 @@ DOMAIN-SUFFIX,pop-mail.outlook.com
 # VPS
 IP-CIDR,23.92.0.0/14,no-resolve
 IP-CIDR,38.60.0.0/14,no-resolve
+IP-CIDR,107.175.0.0/16,no-resolve
 IP-CIDR,108.165.0.0/16,no-resolve
 IP-CIDR,148.130.0.0/14,no-resolve
 IP-CIDR,154.9.0.0/16,no-resolve
