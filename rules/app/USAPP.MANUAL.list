@@ -3,7 +3,10 @@ DOMAIN-SUFFIX,frpus.112700.xyz
 DOMAIN-SUFFIX,us1.kuxueyun.com
 DOMAIN-SUFFIX,ca.kuxueyun.com
 DOMAIN-SUFFIX,follow.is
+PROCESS-NAME,transferwise
+PROCESS-NAME-REGEX,transferwise
 DOMAIN-SUFFIX,wise.com
+DOMAIN-KEYWORD,transferwise
 DOMAIN-SUFFIX,vote.gov
 DOMAIN-SUFFIX,reshot.ai
 DOMAIN-SUFFIX,huggingface.co
@@ -20,6 +23,7 @@ DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,akm.112700.xyz
 DOMAIN-SUFFIX,akmws.112700.xyz
 DOMAIN-SUFFIX,search.iswsh.com
+DOMAIN-SUFFIX,cs.iswsh.com
 DOMAIN-SUFFIX,chat.aijust.org
 DOMAIN-SUFFIX,api.aijust.org
 DOMAIN-SUFFIX,chat.aifun.win
