@@ -128,6 +128,8 @@ PROCESS-NAME,com.chaozh.iReaderFree
 PROCESS-NAME-REGEX,com\.chaozh\.iReaderFree
 # 番茄免费小说
 PROCESS-NAME,com.dragon.read
+# 晋江小说
+PROCESS-NAME,com.jjwxc.reader
 
 # 新闻
 # 今日头条
@@ -148,6 +150,13 @@ PROCESS-NAME,com.ruanmei.ithome
 # 视频
 # 哔哩哔哩
 PROCESS-NAME,tv.danmaku.bili
+PROCESS-NAME,com.taobao.taobao
+PROCESS-NAME,com.bilibili.app.blue
+PROCESS-NAME,com.bilibili.app.in
+PROCESS-NAME,com.bilibili.comic
+PROCESS-NAME,com.bilibili.comic.intl
+PROCESS-NAME,tv.danmaku.bili
+PROCESS-NAME,tv.danmaku.bilibilihd
 # 抖音短视频
 PROCESS-NAME,com.ss.android.ugc.aweme
 PROCESS-NAME-REGEX,com\.ss\.android\.ugc\.aweme
@@ -324,12 +333,52 @@ PROCESS-NAME,com.tencent.tmgp.sgame
 PROCESS-NAME-REGEX,com\.tencent\.tmgp\.sgame
 
 # 其他
+# 百度车载组件
+PROCESS-NAME,com.baidu.carlife.vivo
+# VIVO量子套件
+PROCESS-NAME,pcsuite.exe
+PROCESS-NAME-REGEX,vivoSyncService
+PROCESS-NAME-REGEX,vivoesService
+PROCESS-NAME-REGEX,^(?=.*Vivo)(?=.*Conn).*$
+PROCESS-NAME-REGEX,VivoConnService
+PROCESS-NAME-REGEX,^(?=.*pcsuite)(?=.*Helper).*$
+PROCESS-NAME,com.vivo.pcsuite
+PROCESS-NAME,com.vivo.connbase
+# VIVO蓝心小V
+PROCESS-NAME,com.vivo.ai.copilot
+PROCESS-NAME,com.vivo.ai.base.copilot
+# VIVO蓝心小V组件
+PROCESS-NAME,com.vivo.launchercopilot
+# VIVO开机引导
+PROCESS-NAME,com.vivo.setupwizard
+# VIVO电源信息
+PROCESS-NAME,com.vivo.fuelsummary
+# VIVO售后服务
+PROCESS-NAME,com.vos.as.vit
+# VIVO多任务
+PROCESS-NAME,com.vivo.smartmultiwindow
 # CCFLink
 PROCESS-NAME,com.alibaba.android.rimet.ccflink
 # VIVO互传
 PROCESS-NAME,com.vivo.easyshare
 # VIVO智慧引擎
 PROCESS-NAME,com.vivo.abe
+# VIVO健康关怀
+PROCESS-NAME,com.vivo.widget.healthcare
+# VIVO输入法
+PROCESS-NAME,com.vivo.ai.ime.nex
+# VIVO免费小说
+PROCESS-NAME,com.vivo.browser.novel.widget
+# VIVO摄影
+PROCESS-NAME,com.vivo.symmetry
+# VIVO体验评价
+PROCESS-NAME,com.vivo.nps
+# VIVO移动服务
+PROCESS-NAME,com.vivo.vms
+# VIVO文档
+PROCESS-NAME,com.vivo.smartoffice
+# VIVO健康
+PROCESS-NAME,com.vivo.health
 # 中国联通
 PROCESS-NAME,com.sinovatech.unicom.ui
 PROCESS-NAME-REGEX,sinovatech\.unicom
@@ -355,3 +404,10 @@ PROCESS-NAME,com.xiaomi.smarthome
 PROCESS-NAME,com.ct.client
 # WPS Office
 PROCESS-NAME,cn.wps.moffice_eng
+# ......
+PROCESS-NAME,com.zhiliaoapp.musically
+PROCESS-NAME,com.xiaomi.mibrain.speech
+PROCESS-NAME,小米云服务.exe
+PROCESS-NAME,Thunder
+PROCESS-NAME,Thunder.exe
+PROCESS-NAME,com.qiyi.video

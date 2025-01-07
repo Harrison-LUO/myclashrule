@@ -12,8 +12,8 @@ mode: rule
 log-level: info
 global-client-fingerprint: chrome
 global-ua: mihomo
-keep-alive-interval: 60
-keep-alive-idle: 1800
+# keep-alive-interval: 60
+# keep-alive-idle: 1800
 disable-keep-alive: false
 geo-auto-update: true
 geo-update-interval: 12
@@ -136,6 +136,7 @@ dns:
     - 119.29.29.29
     - system
   fallback:
+    - https://101.101.101.101/dns-query
     - https://dns.google/dns-query
     - https://1.1.1.1/dns-query
   fallback-filter:
