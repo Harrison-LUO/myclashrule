@@ -8,6 +8,7 @@ bind-address: "*"
 ipv6: true
 external-controller: 0.0.0.0:9090
 secret: "zQ!h90n@BBp"
+routing-mark: 11451
 mode: rule
 log-level: info
 global-client-fingerprint: chrome
@@ -15,6 +16,7 @@ global-ua: mihomo
 # keep-alive-interval: 60
 # keep-alive-idle: 1800
 disable-keep-alive: false
+geodata-loader: standard
 geo-auto-update: true
 geo-update-interval: 12
 geox-url:
@@ -33,10 +35,10 @@ tun:
   auto-detect-interface: true
 dns:
   enable: true
-  ipv6: false
+  ipv6: true
   prefer-h3: true
   use-hosts: true
-  enhanced-mode: fake-ip
+  enhanced-mode: redir-host
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
