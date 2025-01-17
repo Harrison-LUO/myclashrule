@@ -1,6 +1,5 @@
 # 常用CN应用直连列表
 # 部分系统服务
-
 # 应用商店
 # 腾讯应用宝
 PROCESS-NAME,com.tencent.android.qqdownloader
@@ -331,6 +330,12 @@ PROCESS-NAME-REGEX,com\.ximalaya\.ting\.android
 # 王者荣耀
 PROCESS-NAME,com.tencent.tmgp.sgame
 PROCESS-NAME-REGEX,com\.tencent\.tmgp\.sgame
+# wegame相关
+PROCESS-NAME,wegame.exe
+PROCESS-NAME-REGEX,wegame
+PROCESS-NAME,TinyDL.exe
+PROCESS-NAME-REGEX,TinyDL
+
 
 # 其他
 # 百度车载组件
