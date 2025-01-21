@@ -16,13 +16,13 @@ global-ua: mihomo
 # keep-alive-interval: 60
 # keep-alive-idle: 1800
 disable-keep-alive: false
-geodata-loader: standard
+geodata-mode: true
 geo-auto-update: true
 geo-update-interval: 12
 geox-url:
-  geoip: "https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geoip.dat"
-  geosite: "https://testingcf.jsdelivr.net/gh/Loyalsoldier/v2ray-rules-dat@release/geosite.dat"
-  mmdb: "https://testingcf.jsdelivr.net/gh/Hackl0us/GeoIP2-CN@release/Country.mmdb"
+  geoip: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat"
+  geosite: "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
+  mmdb: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb"
 tun:
   enable: false
   device: MihomoCore
@@ -142,7 +142,7 @@ dns:
     - https://dns.google/dns-query
     - https://1.1.1.1/dns-query
   fallback-filter:
-    geoip: true
+    geoip: false
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
