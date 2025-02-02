@@ -597,11 +597,6 @@ DOMAIN-SUFFIX,grazie.ai
 DOMAIN-SUFFIX,grazie.aws.intellij.net
 # KLing可灵
 DOMAIN-SUFFIX,klingai.com
-# Deepseek
-DOMAIN-SUFFIX,deepseek.com
-PROCESS-NAME,com.deepseek.chat
-PROCESS-NAME-REGEX,com\.deepseek\.chat
-PROCESS-NAME-REGEX,^(?=.*deepseek).*$
 # SiderAI
 DOMAIN-SUFFIX,sider.ai
 # MistralAI
@@ -612,21 +607,6 @@ DOMAIN-SUFFIX,codeium.com
 # hcompany.ai
 DOMAIN-SUFFIX,hcompany.ai
 DOMAIN-KEYWORD,hcompany
-
-
-# 邮箱
-DOMAIN-SUFFIX,smtp.gmail.com
-DOMAIN-SUFFIX,pop.gmail.com
-DOMAIN-SUFFIX,imap.gmail.com
-DOMAIN-SUFFIX,mail.google.com
-DOMAIN-SUFFIX,smtp.office365.com
-DOMAIN-SUFFIX,imap.office365.com
-DOMAIN-SUFFIX,pop.office365.com
-DOMAIN-SUFFIX,outlook.office365.com
-DOMAIN-SUFFIX,m.hotmail.com
-DOMAIN-SUFFIX,smtp-mail.outlook.com
-DOMAIN-SUFFIX,imap-mail.outlook.com
-DOMAIN-SUFFIX,pop-mail.outlook.com
 
 # VPS
 IP-CIDR,23.92.0.0/14,no-resolve
