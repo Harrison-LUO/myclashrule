@@ -507,7 +507,8 @@ DOMAIN-KEYWORD,developerprofiles
 DOMAIN-KEYWORD,generativelanguage
 
 # 部分服务
-DOMAIN-SUFFIX,frpus.112700.xyz
+DOMAIN-SUFFIX,onlyfans.com
+DOMAIN-KEYWORD,onlyfans
 DOMAIN-SUFFIX,us1.kuxueyun.com
 DOMAIN-SUFFIX,ca.kuxueyun.com
 DOMAIN-SUFFIX,follow.is
@@ -528,6 +529,7 @@ DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,frpus.112700.xyz
 DOMAIN-SUFFIX,sub.876521.xyz
 DOMAIN-SUFFIX,yf.876521.xyz
 DOMAIN-SUFFIX,ushe0.112700.xyz
@@ -599,8 +601,6 @@ DOMAIN-SUFFIX,grazie.aws.intellij.net
 DOMAIN-SUFFIX,klingai.com
 # SiderAI
 DOMAIN-SUFFIX,sider.ai
-# MistralAI
-DOMAIN-SUFFIX,mistral.ai
 # codeium&windsurf
 DOMAIN-SUFFIX,codeiumdata.com
 DOMAIN-SUFFIX,codeium.com
@@ -609,17 +609,16 @@ DOMAIN-SUFFIX,hcompany.ai
 DOMAIN-KEYWORD,hcompany
 
 # VPS
-IP-CIDR,23.92.0.0/14,no-resolve
-IP-CIDR,38.60.0.0/14,no-resolve
-IP-CIDR,68.168.0.0/16,no-resolve
+IP-CIDR,23.94.180.0/24,no-resolve
+IP-CIDR,38.60.91.0/24,no-resolve
+IP-CIDR,68.168.20.0/24,no-resolve
 IP-CIDR,107.175.0.0/16,no-resolve
 IP-CIDR,108.165.0.0/16,no-resolve
-IP-CIDR,148.130.0.0/14,no-resolve
+IP-CIDR,148.135.103.0/24,no-resolve
 IP-CIDR,154.9.0.0/16,no-resolve
 IP-CIDR,156.229.0.0/16,no-resolve
 IP-CIDR,162.254.85.0/24,no-resolve
 IP-CIDR,173.249.210.0/24,no-resolve
-IP-CIDR,198.22.0.0/14,no-resolve
 IP-CIDR6,2001:1980:e00c::/48,no-resolve
 IP-CIDR6,2607:9000:800::/48,no-resolve
 IP-CIDR6,2607:f130::/32,no-resolve
