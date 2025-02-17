@@ -524,7 +524,7 @@ DOMAIN-SUFFIX,us1.kuxueyun.com
 DOMAIN-SUFFIX,ca.kuxueyun.com
 DOMAIN-SUFFIX,follow.is
 PROCESS-NAME,transferwise
-PROCESS-NAME-REGEX,transferwise
+
 DOMAIN-SUFFIX,wise.com
 DOMAIN-KEYWORD,transferwise
 DOMAIN-SUFFIX,vote.gov
@@ -568,29 +568,29 @@ DOMAIN-SUFFIX,byteintlapi.com
 DOMAIN-SUFFIX,itobsnssdk.com
 DOMAIN-SUFFIX,marscode.com
 PROCESS-NAME,Trae Helper
-PROCESS-NAME-REGEX,^(?=.*Trae)(?=.*Helper).*$
+
 # QwenLLM
 DOMAIN-SUFFIX,qwenlm.ai
 # Claude其他
 DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-KEYWORD,claudeusercontent
 PROCESS-NAME,com.anthropic.claude
-PROCESS-NAME-REGEX,com\.anthropic\.claude
-PROCESS-NAME-REGEX,^(?=.*anthropic)(?=.*claude).*$
+
+
 # ChatGPT其他
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,openaiapi-site.azureedge.net
 DOMAIN-SUFFIX,sora.com
 PROCESS-NAME,com.openai.chatgpt
-PROCESS-NAME-REGEX,com\.openai\.chatgpt
-PROCESS-NAME-REGEX,^(?=.*openai)(?=.*chatgpt).*$
+
+
 # Gemini其他
 PROCESS-NAME,com.google.android.apps.bard
-PROCESS-NAME-REGEX,com\.google\.android\.apps\.bard
-PROCESS-NAME-REGEX,^(?=.*google)(?=.*bard).*$
+
+
 PROCESS-NAME,com.google.android.apps.gemini
-PROCESS-NAME-REGEX,com\.google\.android\.apps\.gemini
-PROCESS-NAME-REGEX,^(?=.*google)(?=.*gemini).*$
+
+
 # X.ai
 DOMAIN-SUFFIX,x.ai
 # LLM竞技场
