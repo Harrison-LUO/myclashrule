@@ -1,3 +1,10 @@
+# 禁用部分网站QUIC
+# 禁用youtube QUIC
+AND,((NETWORK,UDP),(AND,((DST-PORT,443),(GEOSITE,youtube))))
+# 禁用bilibili QUIC
+AND,((NETWORK,UDP),(AND,((DST-PORT,443),(GEOSITE,bilibili))))
+AND,((NETWORK,UDP),(AND,((DST-PORT,3478),(GEOSITE,bilibili))))
+
 # BAN HTTPDNS补充
 # fuck 美团
 DOMAIN-SUFFIX,dreport.meituan.net
