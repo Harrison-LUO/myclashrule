@@ -13,9 +13,6 @@ mode: rule
 log-level: info
 global-client-fingerprint: chrome
 global-ua: mihomo
-# keep-alive-interval: 60
-# keep-alive-idle: 1800
-disable-keep-alive: false
 geodata-mode: true
 geo-auto-update: true
 geo-update-interval: 12
@@ -143,7 +140,7 @@ dns:
     - https://1.1.1.1/dns-query
     - https://208.67.222.222/dns-query
   fallback-filter:
-    geoip: false
+    geoip: true
     geoip-code: CN
     ipcidr:
       - 240.0.0.0/4
@@ -166,8 +163,6 @@ dns:
       - "+.cloudflare.net"
       - "+.cloudflareinsights.com"
       - "+.cohere.ai"
-      - "+.docker.com"
-      - "+.docker.io"
       - "+.facebook.com"
       - "+.github.com"
       - "+.githubusercontent.com"
@@ -191,7 +186,6 @@ dns:
       - "+.segment.com"
       - "+.segment.io"
       - "+.sentry.io"
-      - "+.synn.cc"
       - "+.stripe.com"
       - "+.t.me"
       - "+.tailscale.com"
