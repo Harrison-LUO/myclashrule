@@ -58,29 +58,17 @@ dns:
       - https://dns.alidns.com/dns-query#skip-cert-verify=true
     'geosite:gfw': 
       - tls://208.67.220.220#RULES&skip-cert-verify=true
-      - 1.1.1.1#RULES
-      - 8.8.4.4#RULES
+      - tls://1.1.1.1#RULES
+      - tls://8.8.4.4#RULES
+  proxy-server-nameserver:
+    - https://doh.pub/dns-query#skip-cert-verify=true
+    - https://dns.alidns.com/dns-query#skip-cert-verify=true
   default-nameserver:
     - 119.29.29.29
     - 223.5.5.5
   nameserver:
     - 119.29.29.29
     - 223.5.5.5
-    - dhcp://en0
-  proxy-server-nameserver:
-    - https://doh.pub/dns-query#skip-cert-verify=true
-    - https://dns.alidns.com/dns-query#skip-cert-verify=true
-  fallback:
-    - tls://208.67.220.220#RULES&skip-cert-verify=true
-    - 1.1.1.1#RULES
-    - 8.8.4.4#RULES
-  fallback-filter:
-    geoip: false
-    geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
-    geosite:
-      - gfw
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
