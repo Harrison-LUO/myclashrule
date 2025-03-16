@@ -6,6 +6,13 @@ payload:
   - DOMAIN-SUFFIX,docker.com
   - DOMAIN-SUFFIX,docker.io
   - DOMAIN-SUFFIX,dockerhub.com
+  - DOMAIN-SUFFIX,browsecraft.com
+  - DOMAIN-SUFFIX,avatars-githubusercontent-webp.webp.se
+  - DOMAIN-SUFFIX,qpic.ws
+  - DOMAIN-SUFFIX,2img.org
+  - DOMAIN-SUFFIX,sda1.dev
+  - DOMAIN-SUFFIX,urlimage.cc
+  - DOMAIN-SUFFIX,qpic.w
   - DOMAIN-KEYWORD,51cg
   - DOMAIN-SUFFIX,clashverge.dev
   - DOMAIN-SUFFIX,agilebits.com
@@ -29,3 +36,9 @@ payload:
   - DOMAIN-SUFFIX,clarity.ms
   - DOMAIN-SUFFIX,lf6-unpkg.zstaticcdn.com
   - DOMAIN-SUFFIX,lf6-cdnjs.zstaticcdn.com
+  - DOMAIN-SUFFIX,darkreader.org
+  - DOMAIN-SUFFIX,gorse.io
+  - DOMAIN-SUFFIX,dockerstatic.com
+  - DOMAIN-SUFFIX,voidtools.com
+  - DOMAIN-SUFFIX,pwnedpasswords.com
+  - DOMAIN-SUFFIX,ipify.org
