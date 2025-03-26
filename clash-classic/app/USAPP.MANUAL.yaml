@@ -18,8 +18,8 @@ payload:
   - DOMAIN-SUFFIX,githubstatus.com
   - DOMAIN-SUFFIX,githubuniverse.com
   - DOMAIN-SUFFIX,githubusercontent.com
-  - wootric.com
-  - contentsquare.net
+  - DOMAIN-SUFFIX,wootric.com
+  - DOMAIN-SUFFIX,contentsquare.net
   - DOMAIN-SUFFIX,mktoresp.com
   - DOMAIN-SUFFIX,6sc.co
   - DOMAIN-SUFFIX,6sense.com
@@ -64,6 +64,8 @@ payload:
   - DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
   - DOMAIN-SUFFIX,cursor.sh
   - DOMAIN-SUFFIX,cursor.com
+  - DOMAIN-SUFFIX,s.luoveyq.space
+  - DOMAIN-SUFFIX,fwhwill.win
   - DOMAIN-SUFFIX,frpus.112700.xyz
   - DOMAIN-SUFFIX,sub.876521.xyz
   - DOMAIN-SUFFIX,yf.876521.xyz
@@ -115,9 +117,13 @@ payload:
   - PROCESS-NAME-REGEX,^(?=.*google)(?=.*gemini).*$
   - DOMAIN-SUFFIX,x.ai
   - DOMAIN-SUFFIX,grok.com
+  - PROCESS-NAME,ai.x.grok
+  - PROCESS-NAME-REGEX,ai\.x\.grok
+  - PROCESS-NAME-REGEX,^(?=.*x)(?=.*grok).*$
   - DOMAIN-SUFFIX,lmsys.org
   - DOMAIN-SUFFIX,groq.com
   - DOMAIN-SUFFIX,poe.com
+  - PROCESS-NAME,com.poe.android
   - DOMAIN-KEYWORD,cohere
   - DOMAIN-SUFFIX,coze.com
   - DOMAIN-SUFFIX,grazie.ai
@@ -132,6 +138,8 @@ payload:
   - DOMAIN-SUFFIX,pearai.b-cdn.net
   - DOMAIN-SUFFIX,trypear.ai
   - DOMAIN-SUFFIX,perplexity.ai
+  - PROCESS-NAME,ai.perplexity.app.android
+  - PROCESS-NAME-REGEX,^(?=.*ai)(?=.*perplexity).*$
   - DOMAIN-SUFFIX,manus.im
   - DOMAIN-SUFFIX,manus.space
   - DOMAIN-SUFFIX,manuscdn.com

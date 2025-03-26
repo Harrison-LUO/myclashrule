@@ -22,8 +22,8 @@ DOMAIN-SUFFIX,githubuniverse.com
 DOMAIN-SUFFIX,githubusercontent.com
 
 # 其他服务
-wootric.com
-contentsquare.net
+DOMAIN-SUFFIX,wootric.com
+DOMAIN-SUFFIX,contentsquare.net
 DOMAIN-SUFFIX,mktoresp.com
 DOMAIN-SUFFIX,6sc.co
 DOMAIN-SUFFIX,6sense.com
@@ -68,6 +68,8 @@ DOMAIN-SUFFIX,ss.epdg.epc.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,ss.epdg.epc.geo.mnc260.mcc310.pub.3gppnetwork.org
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursor.com
+DOMAIN-SUFFIX,s.luoveyq.space
+DOMAIN-SUFFIX,fwhwill.win
 DOMAIN-SUFFIX,frpus.112700.xyz
 DOMAIN-SUFFIX,sub.876521.xyz
 DOMAIN-SUFFIX,yf.876521.xyz
@@ -125,12 +127,16 @@ PROCESS-NAME-REGEX,^(?=.*google)(?=.*gemini).*$
 # X.ai
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,grok.com
+PROCESS-NAME,ai.x.grok
+PROCESS-NAME-REGEX,ai\.x\.grok
+PROCESS-NAME-REGEX,^(?=.*x)(?=.*grok).*$
 # LLM竞技场
 DOMAIN-SUFFIX,lmsys.org
 # Groq
 DOMAIN-SUFFIX,groq.com
 # poe
 DOMAIN-SUFFIX,poe.com
+PROCESS-NAME,com.poe.android
 # cohere
 DOMAIN-KEYWORD,cohere
 # coze
@@ -154,6 +160,8 @@ DOMAIN-SUFFIX,pearai.b-cdn.net
 DOMAIN-SUFFIX,trypear.ai
 # perplexity
 DOMAIN-SUFFIX,perplexity.ai
+PROCESS-NAME,ai.perplexity.app.android
+PROCESS-NAME-REGEX,^(?=.*ai)(?=.*perplexity).*$
 # Manus
 DOMAIN-SUFFIX,manus.im
 DOMAIN-SUFFIX,manus.space
