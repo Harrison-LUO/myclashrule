@@ -13,6 +13,7 @@ mode: rule
 log-level: info
 global-client-fingerprint: chrome
 global-ua: mymihomo
+tcp-concurrent: true
 unified-delay: false
 geodata-mode: true
 geo-auto-update: true
@@ -40,7 +41,7 @@ tun:
 dns:
   enable: true
   ipv6: true
-  prefer-h3: true
+  prefer-h3: false
   use-hosts: true
   enhanced-mode: redir-host
   nameserver-policy:
@@ -72,79 +73,59 @@ dns:
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - "geosite:cn"
-    - "*"
-    - "+.lan"
-    - connect.rom.miui.com
-    - kuxueyun.com
-    - "+.miwifi.com"
-    - "+.ntp.org"
-    - "+.u-tools.cn"
-    - "+.mediatek.com"
-    - "+.cfprefer1.xyz"
-    - "+.wetab.link"
-    - localhost.ptlogin2.qq.com
-    - localhost.sec.qq.com
-    - localhost.work.weixin.qq.com
-    - "+.weixin.qq.com"
-    - "+.wechat.com"
-    - "+.msftconnecttest.com"
-    - "+.msftncsi.com"
-    - "+.wpsmail.net"
-    - "+.henzanapp.com"
-    - "+.pconline.com.cn"
-    - "+.kuxueyun.com"
-    - "ntp.*.com"
-    - time.windows.com
-    - time.nist.gov
-    - time.apple.com
-    - time.asia.apple.com
-    - cn.ntp.org.cn
-    - edu.ntp.org.cn
-    - hk.ntp.org.cn
-    - tw.ntp.org.cn
-    - us.ntp.org.cn
-    - sgp.ntp.org.cn
-    - kr.ntp.org.cn
-    - jp.ntp.org.cn
-    - de.ntp.org.cn
-    - ina.ntp.org.cn
-    - 0.openwrt.pool.ntp.org
-    - 1.openwrt.pool.ntp.org
-    - 2.openwrt.pool.ntp.org
-    - 3.openwrt.pool.ntp.org
-    - ntp.aliyun.com
-    - ntp1.aliyun.com
-    - ntp2.aliyun.com
-    - ntp3.aliyun.com
-    - ntp4.aliyun.com
-    - ntp5.aliyun.com
-    - ntp6.aliyun.com
-    - ntp7.aliyun.com
-    - time1.aliyun.com
-    - time2.aliyun.com
-    - time3.aliyun.com
-    - time4.aliyun.com
-    - time5.aliyun.com
-    - time6.aliyun.com
-    - time7.aliyun.com
-    - s1c.time.edu.cn
-    - s2m.time.edu.cn
-    - s1b.time.edu.cn
-    - s1e.time.edu.cn
-    - s2a.time.edu.cn
-    - s2b.time.edu.cn
-    - time1.apple.com
-    - time2.apple.com
-    - time3.apple.com
-    - time4.apple.com
-    - time5.apple.com
-    - time6.apple.com
-    - time7.apple.com
-    - time1.google.com
-    - time2.google.com
-    - time3.google.com
-    - time4.google.com
+    - 'geosite:cn'
+    - '+.*'
+    - '+.lan'
+    - '*.lan'
+    - '*.local'
+    - '*.localhost'
+    - '*.localdomain'
+    - 'stun.*.*'
+    - 'stun.*.*.*'
+    - '+.stun.*.*'
+    - '+.stun.*.*.*'
+    - '+.stun.*.*.*.*'
+    - '+.stun.*.*.*.*.*'
+    - 'time.*.gov'
+    - 'time.*.com'
+    - 'time1.*.com'
+    - 'time2.*.com'
+    - 'time3.*.com'
+    - 'time4.*.com'
+    - 'time5.*.com'
+    - 'time6.*.com'
+    - 'time7.*.com'
+    - 'ntp.*.com'
+    - 'ntp1.*.com'
+    - 'ntp2.*.com'
+    - 'ntp3.*.com'
+    - 'ntp4.*.com'
+    - 'ntp5.*.com'
+    - 'ntp6.*.com'
+    - 'ntp7.*.com'
+    - '*.ntp.org.*'
+    - '+.ntp.org'
+    - 'time.*.apple.com'
+    - '+.msftconnecttest.com'
+    - '+.msftncsi.com'
+    - '*.steamcontent.com'
+    - '*.*.xboxlive.com'
+    - 'xbox.*.*.microsoft.com'
+    - 'connect.rom.miui.com'
+    - 'localhost.ptlogin2.qq.com'
+    - 'localhost.work.weixin.qq.com'
+    - 'localhost.sec.qq.com'
+    - '+.weixin.qq.com'
+    - '+.wechat.com'
+    - '+.miwifi.com'
+    - '+.u-tools.cn'
+    - '+.mediatek.com'
+    - '+.cfprefer1.xyz'
+    - '+.wetab.link'
+    - '+.wpsmail.net'
+    - '+.henzanapp.com'
+    - '+.pconline.com.cn'
+    - '+.kuxueyun.com'
 profile:
   store-selected: true
   store-fake-ip: true
@@ -208,16 +189,17 @@ sniffer:
     - 36.248.45.62/32
     - 2001:4860:4860::8888/128
     - 2001:4860:4860::8844/128
+
 hosts:
-  mtalk.google.com: 74.125.204.188
-  alt1-mtalk.google.com: 142.251.2.188
-  alt2-mtalk.google.com: 192.178.128.188
-  alt3-mtalk.google.com: 108.177.104.188
-  alt4-mtalk.google.com: 108.177.104.188
-  alt5-mtalk.google.com: 142.250.141.188
-  alt6-mtalk.google.com: 173.194.77.188
-  alt7-mtalk.google.com: 173.194.219.188
-  alt8-mtalk.google.com: 142.250.112.188
+  mtalk.google.com: [64.233.188.188, 108.177.97.188, '2404:6800:4008:c07::bc', '2404:6800:4008:c05::bc']
+  alt1-mtalk.google.com: [142.251.186.188, 142.250.141.188, '2607:f8b0:4023:c0b::bc']
+  alt2-mtalk.google.com: [142.250.152.188, 142.251.186.188, 142.250.141.188]
+  alt3-mtalk.google.com: [142.250.157.188, 142.251.186.188, '2404:6800:4008:c13::bc', '2607:f8b0:4001:c56::bc']
+  alt4-mtalk.google.com: [74.125.200.188, 142.250.152.188, 108.177.104.188]
+  alt5-mtalk.google.com: [108.177.98.188, 142.250.157.188, '2607:f8b0:4001:c56::bc', '2607:f8b0:4023:1::bc']
+  alt6-mtalk.google.com: [108.177.98.188, 74.125.200.188, 142.251.186.188]
+  alt7-mtalk.google.com: [142.250.141.188, 142.250.157.188, '2404:6800:4008:c13::bc', '2607:f8b0:4002:c03::bc']
+  alt8-mtalk.google.com: [172.217.197.188, 108.177.98.188, 142.251.186.188]
 
 proxies:
   - name: DIRECT-V4PRE
