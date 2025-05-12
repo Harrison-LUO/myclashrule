@@ -1,4 +1,25 @@
 payload:
+  - DOMAIN-SUFFIX,akile.io
+  - DOMAIN-SUFFIX,qingqiu.host
+  - DOMAIN-SUFFIX,nezha.tech
+  - DOMAIN-SUFFIX,lala.gg
+  - DOMAIN-SUFFIX,deeplx.org
+  - DOMAIN-SUFFIX,login.tailscale.com
+  - DOMAIN-SUFFIX,www.tailscale.com
+  - DOMAIN-SUFFIX,v2ex.com
+  - DOMAIN-SUFFIX,hostloc.com
+  - DOMAIN-SUFFIX,xaoxuu.com
+  - DOMAIN-SUFFIX,kuxueyun.com
+  - DOMAIN-SUFFIX,nathost.com
+  - DOMAIN-SUFFIX,qpic.ws
+  - DOMAIN-SUFFIX,20img.com
+  - DOMAIN-SUFFIX,21img.com
+  - DOMAIN-SUFFIX,22img.com
+  - DOMAIN-SUFFIX,23img.com
+  - DOMAIN-SUFFIX,24img.com
+  - DOMAIN-SUFFIX,25img.com
+  - DOMAIN-SUFFIX,api.nn.ci
+  - DOMAIN-SUFFIX,clashmi.app
   - DOMAIN-SUFFIX,ubuntu.com
   - DOMAIN-SUFFIX,browsecraft.com
   - DOMAIN-SUFFIX,avatars-githubusercontent-webp.webp.se
@@ -27,17 +48,38 @@ payload:
   - DOMAIN-SUFFIX,browserscan.net
   - DOMAIN-SUFFIX,ipleak.net
   - DOMAIN-SUFFIX,wap.ac
+  - DOMAIN-SUFFIX,shared.oaifree.com
+  - DOMAIN-SUFFIX,naixi.net
+  - DOMAIN-SUFFIX,nodeloc.com
   - DOMAIN-SUFFIX,clarity.ms
   - DOMAIN-SUFFIX,lf6-unpkg.zstaticcdn.com
   - DOMAIN-SUFFIX,lf6-cdnjs.zstaticcdn.com
   - DOMAIN-SUFFIX,darkreader.org
   - DOMAIN-SUFFIX,gorse.io
+  - DOMAIN-SUFFIX,dalao.net
   - DOMAIN-SUFFIX,dockerstatic.com
   - DOMAIN-SUFFIX,voidtools.com
   - DOMAIN-SUFFIX,pwnedpasswords.com
   - DOMAIN-SUFFIX,ipify.org
-  - DOMAIN-SUFFIX,unraid.net
   - DOMAIN-SUFFIX,tawk.to
+  - DOMAIN-SUFFIX,passwd.iswsh.com
+  - DOMAIN-SUFFIX,memos.iswsh.com
+  - DOMAIN-SUFFIX,cloud.iswsh.com
+  - DOMAIN-SUFFIX,photo.iswsh.com
+  - DOMAIN-SUFFIX,nasdav.iswsh.com
+  - DOMAIN-SUFFIX,wiki.iswsh.com
+  - DOMAIN-SUFFIX,s3.iswsh.com
+  - DOMAIN-SUFFIX,s3api.iswsh.com
+  - DOMAIN-SUFFIX,dnsmgr.iswsh.com
+  - DOMAIN-SUFFIX,img.iswsh.com
+  - DOMAIN-SUFFIX,alist.iswsh.com
+  - DOMAIN-SUFFIX,fastgpt.iswsh.com
+  - DOMAIN-SUFFIX,file.iswsh.com
+  - DOMAIN-SUFFIX,gitea.iswsh.com
+  - DOMAIN-SUFFIX,share.iswsh.com
+  - DOMAIN-SUFFIX,img.wush.cc
+  - DOMAIN-SUFFIX,chatb.aijust.org
+  - DOMAIN-SUFFIX,chatb.aifun.win
   - DOMAIN-SUFFIX,attemptd.work
   - DOMAIN-SUFFIX,meta.ai
   - DOMAIN-SUFFIX,llama.com
@@ -63,3 +105,4 @@ payload:
   - DOMAIN-SUFFIX,x360xs.com
   - DOMAIN-SUFFIX,69shu.xyz
   - DOMAIN-SUFFIX,18mh.net
+  - DOMAIN-SUFFIX,shucdn.com

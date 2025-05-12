@@ -1,27 +1,13 @@
-# Amazon Simple Storage
-DOMAIN-SUFFIX,ap-south-1.amazonaws.com
-DOMAIN-SUFFIX,ap-northeast-1.amazonaws.com
-DOMAIN-SUFFIX,ap-east-1.amazonaws.com
-DOMAIN-SUFFIX,ap-west-1.amazonaws.com
-# Amazon Panorama API
-DOMAIN-SUFFIX,ap-south-1.prod.pr.panorama.console.api.aws
-DOMAIN-SUFFIX,ap-northeast-1.prod.pr.panorama.console.api.aws
-DOMAIN-SUFFIX,ap-east-1.prod.pr.panorama.console.api.aws
-DOMAIN-SUFFIX,ap-west-1.prod.pr.panorama.console.api.aws
-
 # Other
-DOMAIN-SUFFIX,akile.io
 DOMAIN-SUFFIX,yamlforge.luoveyq.space
 DOMAIN-SUFFIX,conv.luoveyq.space
-DOMAIN-SUFFIX,dalao.net
+DOMAIN-SUFFIX,hk1.kuxueyun.com
 DOMAIN-SUFFIX,frphk.112700.xyz
 DOMAIN-SUFFIX,hkloc0.112700.xyz
 DOMAIN-SUFFIX,hkakile0.112700.xyz
 DOMAIN-SUFFIX,hkakile1.112700.xyz
 DOMAIN-SUFFIX,hkaliyun0.112700.xyz
 DOMAIN-SUFFIX,hkwap0.112700.xyz
-DOMAIN-SUFFIX,passwd.iswsh.com
-DOMAIN-SUFFIX,hk1.kuxueyun.com
 # VPS
 IP-CIDR,45.8.186.0/24,no-resolve
 IP-CIDR,103.244.91.0/24,no-resolve

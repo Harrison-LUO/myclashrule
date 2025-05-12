@@ -20,6 +20,7 @@ payload:
   - DOMAIN-SUFFIX,githubusercontent.com
   - DOMAIN-SUFFIX,hostbrr.com
   - DOMAIN-SUFFIX,wootric.com
+  - DOMAIN-SUFFIX,unraid.net
   - DOMAIN-SUFFIX,contentsquare.net
   - DOMAIN-SUFFIX,mktoresp.com
   - DOMAIN-SUFFIX,6sc.co
@@ -74,6 +75,7 @@ payload:
   - DOMAIN-SUFFIX,usakile0.112700.xyz
   - DOMAIN-SUFFIX,nezha.112700.xyz
   - DOMAIN-SUFFIX,usccsny.luoveyq.space
+  - DOMAIN-SUFFIX,usalist.iswsh.com
   - DOMAIN-KEYWORD,voice.google
   - DOMAIN-KEYWORD,voice.telephony
   - DOMAIN-SUFFIX,voice.google.com

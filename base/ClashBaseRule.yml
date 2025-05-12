@@ -15,14 +15,16 @@ global-client-fingerprint: chrome
 global-ua: mymihomo
 tcp-concurrent: true
 unified-delay: false
+keep-alive-interval: 15
+keep-alive-idle: 180
 geodata-mode: true
 geo-auto-update: true
 geo-update-interval: 12
 geox-url:
-  geoip: "https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geoip-lite.dat"
-  geosite: "https://cdn.jsdmirror.com/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
-  mmdb: "https://cdn.jsdmirror.com/gh/Hackl0us/GeoIP2-CN@release/Country.mmdb"
-  asn: "https://cdn.jsdmirror.com/gh/xishang0128/geoip@release/GeoLite2-ASN.mmdb"
+  geoip: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.dat"
+  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.metadb"
+  asn: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb"
 tun:
   enable: true
   stack: gvisor
@@ -48,31 +50,38 @@ tun:
 dns:
   enable: true
   ipv6: true
+  cache-algorithm: lru
   prefer-h3: false
   use-hosts: true
+  use-system-hosts: true
+  respect-rules: false
   enhanced-mode: redir-host
   nameserver-policy:
     'geosite:googlefcm': 
       - https://doh.pub/dns-query#skip-cert-verify=true
-      - https://dns.alidns.com/dns-query#skip-cert-verify=true
+      - https://223.5.5.5/dns-query#skip-cert-verify=true
     'geosite:gfw': 
-      - tls://208.67.220.220#RULES&skip-cert-verify=true
-      - tls://1.1.1.1#RULES
-      - tls://8.8.4.4#RULES
+      - https://doh.opendns.com/dns-query#RULES&skip-cert-verify=true
+      - https://1.1.1.1/dns-query#RULES&skip-cert-verify=true
+      - https://8.8.8.8/dns-query#RULES&skip-cert-verify=true
+    'geosite:geolocation-!cn': 
+      - https://doh.opendns.com/dns-query#RULES&skip-cert-verify=true
+      - https://1.1.1.1/dns-query#RULES&skip-cert-verify=true
+      - https://8.8.8.8/dns-query#RULES&skip-cert-verify=true
   proxy-server-nameserver:
     - https://doh.pub/dns-query#skip-cert-verify=true
-    - https://dns.alidns.com/dns-query#skip-cert-verify=true
+    - https://223.5.5.5/dns-query#skip-cert-verify=true
   default-nameserver:
+    - 180.184.1.1
     - 119.29.29.29
     - 223.5.5.5
   nameserver:
+    - 180.184.1.1
     - 119.29.29.29
     - 223.5.5.5
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
-    - 'geosite:cn'
-    - 'geoip:CN'
     - 'stun.*.*'
     - 'stun.*.*.*'
     - '+.stun.*.*'
@@ -106,6 +115,7 @@ dns:
     - '+.pconline.com.cn'
     - '+.pingan.com.cn'
     - '+.pool.ntp.org'
+    - '+.push.apple.com'
     - '+.qq.com'
     - '+.sandai.net'
     - '+.services.googleapis.cn'
@@ -216,6 +226,7 @@ dns:
     - 'xbox.*.*.microsoft.com'
     - 'xbox.*.microsoft.com'
     - 'xnotify.xboxlive.com'
+    - WORKGROUP
 profile:
   store-selected: true
   store-fake-ip: true
@@ -226,7 +237,7 @@ sniffer:
   override-destination: true
   sniff:
     HTTP:
-      ports: [80, 8080-8880]
+      ports: [80, 8080, 8082-8880]
       override-destination: true
     TLS:
       ports: [443, 8443]
@@ -236,7 +247,6 @@ sniffer:
       override-destination: true
   force-domain:
     - +.v2ex.com
-    - +.google.com
   skip-domain:
     - Mijia Cloud
     - dlg.io.mi.com
@@ -268,6 +278,8 @@ sniffer:
     - rbspsxp.vivox.com
     - rbswxp.vivox.com
     - basic-static-server.infinitynewtab.com
+    - hp3.mail.netease.com
+    - +.mail.netease.com
   skip-dst-address:
     - 223.5.5.5/32
     - 223.6.6.6/32
