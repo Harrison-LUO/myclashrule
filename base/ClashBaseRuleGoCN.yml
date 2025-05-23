@@ -21,11 +21,11 @@ geodata-loader: memconservative
 geo-auto-update: true
 geo-update-interval: 12
 geosite-matcher: succinct
-geox-url: # Geo 数据库配置，用于地理位置和 ASN 匹配
-  geoip: "https://github.akams.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.dat" # GeoIP 数据库
-  geosite: "https://github.akams.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geosite.dat" # GeoSite 数据库
-  mmdb: "https://github.akams.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.metadb" # GeoIP mmdb 数据库
-  asn: "https://github.akams.cn/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/GeoLite2-ASN.mmdb" # ASN 数据库
+geox-url:
+  geoip: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.dat" # GeoIP 数据库
+  geosite: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geosite.dat" # GeoSite 数据库
+  mmdb: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/geoip.metadb" # GeoIP mmdb 数据库
+  asn: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/release/GeoLite2-ASN.mmdb" # ASN 数据库
 tun:
   enable: true
   stack: gvisor
@@ -58,28 +58,18 @@ dns:
   respect-rules: false
   enhanced-mode: redir-host
   nameserver-policy:
-    'geosite:googlefcm': 
+    'geosite:cn': 
       - https://doh.pub/dns-query#skip-cert-verify=true
       - https://223.5.5.5/dns-query#skip-cert-verify=true
-    'geosite:gfw': 
-      - https://doh.opendns.com/dns-query#RULES&skip-cert-verify=true
-      - https://1.1.1.1/dns-query#RULES&skip-cert-verify=true
-      - https://8.8.8.8/dns-query#RULES&skip-cert-verify=true
-    'geosite:geolocation-!cn': 
-      - https://doh.opendns.com/dns-query#RULES&skip-cert-verify=true
-      - https://1.1.1.1/dns-query#RULES&skip-cert-verify=true
-      - https://8.8.8.8/dns-query#RULES&skip-cert-verify=true
   proxy-server-nameserver:
-    - https://doh.pub/dns-query#skip-cert-verify=true
-    - https://223.5.5.5/dns-query#skip-cert-verify=true
+      - 1.1.1.1#RULES
+      - 8.8.8.8#RULES
   default-nameserver:
-    - 180.184.1.1
-    - 119.29.29.29
-    - 223.5.5.5
+      - 1.1.1.1#RULES
+      - 8.8.8.8#RULES
   nameserver:
-    - 180.184.1.1
-    - 119.29.29.29
-    - 223.5.5.5
+      - 1.1.1.1#RULES
+      - 8.8.8.8#RULES
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter-mode: blacklist
   fake-ip-filter:
@@ -299,26 +289,3 @@ experimental:
   quic-go-disable-gso: true # 禁用 QUIC 协议中的 GSO (Generic Segmentation Offload) 功能
   quic-go-disable-ecn: true #禁用ECN
   dialer-ip4p-convert: false # 启用IP4P地址转换
-
-hosts:
-  mtalk.google.com: [64.233.188.188, 108.177.97.188, '2404:6800:4008:c07::bc', '2404:6800:4008:c05::bc']
-  alt1-mtalk.google.com: [142.251.186.188, 142.250.141.188, '2607:f8b0:4023:c0b::bc']
-  alt2-mtalk.google.com: [142.250.152.188, 142.251.186.188, 142.250.141.188]
-  alt3-mtalk.google.com: [142.250.157.188, 142.251.186.188, '2404:6800:4008:c13::bc', '2607:f8b0:4001:c56::bc']
-  alt4-mtalk.google.com: [74.125.200.188, 142.250.152.188, 108.177.104.188]
-  alt5-mtalk.google.com: [108.177.98.188, 142.250.157.188, '2607:f8b0:4001:c56::bc', '2607:f8b0:4023:1::bc']
-  alt6-mtalk.google.com: [108.177.98.188, 74.125.200.188, 142.251.186.188]
-  alt7-mtalk.google.com: [142.250.141.188, 142.250.157.188, '2404:6800:4008:c13::bc', '2607:f8b0:4002:c03::bc']
-  alt8-mtalk.google.com: [172.217.197.188, 108.177.98.188, 142.251.186.188]
-
-proxies:
-  - name: DIRECT-V4PRE
-    type: direct
-    ip-version: ipv4-prefer
-    udp: true
-    udp-over-tcp: true
-  - name: DIRECT-V6PRE
-    type: direct
-    ip-version: ipv6-prefer
-    udp: true
-    udp-over-tcp: true
