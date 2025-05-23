@@ -4,6 +4,14 @@ DOMAIN-SUFFIX,us-east-2.prod.pr.panorama.console.api.aws
 DOMAIN-SUFFIX,us-west-1.prod.pr.panorama.console.api.aws
 DOMAIN-SUFFIX,us-west-2.prod.pr.panorama.console.api.aws
 
+# flowith
+DOMAIN-SUFFIX,flowith.net
+DOMAIN-SUFFIX,flowith.featurebase.app
+DOMAIN-SUFFIX,edge.flo.ing
+DOMAIN-SUFFIX,us-assets.i.posthog.com
+DOMAIN-SUFFIX,us.i.posthog.com
+DOMAIN-SUFFIX,aibdxsebwhalbnugsqel.supabase.co
+
 # 其他服务
 DOMAIN-SUFFIX,hostbrr.com
 DOMAIN-SUFFIX,wootric.com
@@ -60,6 +68,7 @@ DOMAIN-SUFFIX,chat.aijust.org
 DOMAIN-SUFFIX,chat.aifun.win
 DOMAIN-SUFFIX,chat.iswsh.com
 DOMAIN-SUFFIX,frpus.112700.xyz
+DOMAIN-SUFFIX,frpusstu.876521.xyz
 DOMAIN-SUFFIX,sub.876521.xyz
 DOMAIN-SUFFIX,yf.876521.xyz
 DOMAIN-SUFFIX,ushe0.112700.xyz
